@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <td *ngFor="let title of objectKeys(data[0])">
+        {{ title }}
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let col of objectKeys(row); let i = index;">
+        <div [ngClass]="generateCellClass(objectKeys(row)[i], row[col])">{{ row[col] }}</div>
+      </td>
+    </tr>
+  </tbody>
+</table>

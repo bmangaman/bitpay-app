@@ -1,0 +1,15 @@
+:host {
+  display: grid;
+  grid-template:
+    "sidebar content" 100vh
+    / 300px 1fr;
+
+    #sidebar {
+      grid-area: sidebar;
+    }
+    
+    #content {
+      grid-area: content;
+    }
+}
+

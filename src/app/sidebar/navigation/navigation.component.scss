@@ -1,0 +1,22 @@
+a {
+  display: block;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 250ms;
+  text-decoration: none;
+
+  & + a {
+    margin-top: 5px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &.active {
+    background-color: #ab3586;
+  }
+}

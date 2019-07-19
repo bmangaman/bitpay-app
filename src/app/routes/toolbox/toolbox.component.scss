@@ -1,0 +1,10 @@
+:host {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}

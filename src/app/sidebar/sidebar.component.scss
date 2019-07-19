@@ -1,0 +1,7 @@
+$background-blue: #113061;
+
+:host {
+  background-color: $background-blue;
+  overflow: auto;
+  padding: 25px 15px;
+}
